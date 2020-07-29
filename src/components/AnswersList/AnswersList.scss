@@ -1,0 +1,48 @@
+@import "../../style/constants.scss";
+
+.answers-list {
+    overflow: hidden;
+
+    border: $block-border;
+    border-radius: $border-radius;
+    background-color: $block-background-color;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        padding: 14px 14px 14px 25px;
+
+        border-bottom: $block-border;
+
+        cursor: pointer;
+
+        &:hover {
+            background-color: $hovered-answer-color;
+        }
+
+        &:last-of-type {
+            border-bottom: none;
+        }
+    }
+
+    &__point {
+        width: 10px;
+        height: 10px;
+        margin-right: 15px;
+
+        border-radius: $full-border-radius;
+
+        &_inactive {
+            background-color: $inactive-answer-color;
+        }
+
+        &_correct {
+            background-color: $light-green-color;
+        }
+
+        &_incorrect {
+            background-color: $incorrect-answer-color;
+        }
+    }
+}

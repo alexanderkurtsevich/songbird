@@ -1,0 +1,36 @@
+@import "../../style/constants.scss";
+
+.audio-player {
+    display: flex;
+        flex-direction: row;
+        align-items: center;
+    &__playpause-button {
+        width: 50px;
+        height: 25px;
+
+        background-color: green($color: #000);
+
+        cursor: pointer;
+        
+    }
+
+    &__progress-bar {
+        margin-left: 15px;
+        position: relative;
+
+        width: 300px;
+        height: 4px;
+
+        background-color: blue;
+    }
+
+    &__point {
+        width: 15px;
+        height: 15px;
+        top: -5px;
+        border-radius: $full-border-radius;
+
+        background-color: red;
+        position: absolute;
+    }
+}

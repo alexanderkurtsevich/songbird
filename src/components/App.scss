@@ -1,0 +1,31 @@
+@import "../style/constants.scss";
+
+.songbird {
+    display: grid;
+
+    color: $font-color;
+
+    row-gap: 25px;
+    column-gap: 25px;
+    grid-template-columns: 1fr 1fr;
+
+    &__header {
+        grid-column: 1/3;
+    }
+
+    &__question-block {
+        grid-column: 1/3;
+    }
+
+    &__answers-list {
+        grid-column: 1/2;
+    }
+
+    &__answer-info {
+        grid-column: 2/3;
+    }
+
+    &__next-level-button {
+        grid-column: 1/3;
+    }
+}

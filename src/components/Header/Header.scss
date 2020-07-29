@@ -1,0 +1,13 @@
+.header {
+    &__logo {
+        width: 200px;
+    }
+
+    &__logo-and-score-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        height: 85px;
+    }
+}

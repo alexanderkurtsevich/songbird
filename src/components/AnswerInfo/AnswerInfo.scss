@@ -1,0 +1,15 @@
+@import "../../style/constants.scss";
+
+.answer-info {
+    padding: 15px;
+
+    border: $block-border;
+    border-radius: $border-radius;
+    background-color: $block-background-color;
+
+    &__instruction {
+        span {
+            display: block;
+        }
+    }
+}

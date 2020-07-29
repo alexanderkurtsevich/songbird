@@ -1,0 +1,18 @@
+@import "../../../style/constants.scss"; 
+
+.questions-list {
+    display: grid;
+    overflow: hidden;
+
+    border-radius: $border-radius;
+
+    grid-template-columns: repeat(6, 1fr);
+
+    &__question {
+        padding: 7px 0;
+
+        background-color: $dark-green-color;
+
+        text-align: center;
+    }
+}
