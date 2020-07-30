@@ -1,13 +1,8 @@
 import React, { Component } from 'react';
 import './AudioPlayer.scss';
-import correctAudio from '../../assets/audio/correct.mp3';
+import { connect } from 'react-redux';
 
-export default class AudioPlayer extends Component {
-    state = {
-        progress: 0,
-        audio: new Audio(correctAudio), // Вынеси в конструктор
-        isPlaying: false,
-    }
+class AudioPlayer extends Component {
     playClickHandler = () => {
         const isPlaying = this.state.isPlaying;
         isPlaying ? this.state.audio.pause() : this.state.audio.play();
@@ -50,5 +45,20 @@ export default class AudioPlayer extends Component {
             </div >
         )
     }
-
 }
+
+function mapStateToProps(state) {
+    return {
+        progress: state.audioPlayer.progress,
+        audio: state.audioPlayer.audio,
+        isPlaying: state.audioPlayer.isPlaying,
+    }
+}
+
+function mapDispatchToProps(dispatch) {
+    return {
+
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(AudioPlayer)
