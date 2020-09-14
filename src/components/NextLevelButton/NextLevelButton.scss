@@ -1,15 +1,24 @@
-@import '../../style/constants.scss';
+@import "../../style/constants.scss";
 
 .next-level-button {
-    background-color: $light-green-color;
-    cursor: pointer;
     height: 35px;
-    border-radius: $border-radius;
-    border: $block-border;
-    color: $font-color;
+
     font-size: 15px;
 
-    &:hover {
-        background-color: $hovered-button-color;
+    color: $font-color;
+    border: $block-border;
+    border-radius: $border-radius;
+    background-color: $block-background-color;
+
+    cursor: default;
+
+    &_active {
+        background-color: $light-green-color;
+
+        cursor: pointer;
+
+        &:hover {
+            background-color: $hovered-button-color;
+        }
     }
 }

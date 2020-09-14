@@ -14,5 +14,9 @@
         background-color: $dark-green-color;
 
         text-align: center;
+
+        &_active {
+            background-color: $light-green-color;
+        }
     }
 }

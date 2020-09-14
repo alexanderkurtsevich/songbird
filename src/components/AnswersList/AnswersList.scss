@@ -11,6 +11,7 @@
         display: flex;
         align-items: center;
         flex-direction: row;
+
         padding: 14px 14px 14px 25px;
 
         border-bottom: $block-border;
@@ -32,10 +33,7 @@
         margin-right: 15px;
 
         border-radius: $full-border-radius;
-
-        &_inactive {
-            background-color: $inactive-answer-color;
-        }
+        background-color: $inactive-answer-color;
 
         &_correct {
             background-color: $light-green-color;

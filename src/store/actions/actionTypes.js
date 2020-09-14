@@ -1,0 +1,9 @@
+export const ON_PLAY_PAUSE = 'ON_PLAY_PAUSE';
+export const GET_AUDIO = 'GET_AUDIO';
+export const UPDATE_PROGRESS = 'UPDATE_PROGRESS';
+export const TO_AUDIO_START = 'TO_AUDIO_START';
+export const GET_DATA = 'GET_DATA';
+export const ON_CLICK_ANSWER = 'ON_CLICK_ANSWER';
+export const ON_CORRECT_ANSWER_CLICK = 'ON_CORRECT_ANSWER_CLICK';
+export const TO_NEXT_LEVEL = 'TO_NEXT_LEVEL';
+export const START_NEW_GAME = 'START_NEW_GAME';

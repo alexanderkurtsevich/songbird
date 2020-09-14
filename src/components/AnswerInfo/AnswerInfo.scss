@@ -7,9 +7,63 @@
     border-radius: $border-radius;
     background-color: $block-background-color;
 
+    & > div {
+        display: grid;
+
+        grid-template-columns: auto 1fr;
+        grid-template-rows: repeat(2, max-content) repeat(2, auto);
+    }
+
     &__instruction {
         span {
             display: block;
         }
+    }
+
+    &__image {
+        width: 200px;
+        height: 155px;
+        margin: 0 32px 32px 0;
+
+        border-radius: $border-radius-image;
+        background-size: cover;
+
+        grid-column: 1/2;
+        grid-row: 1/4;
+        object-fit: cover;
+    }
+
+    &__name {
+        padding: 4px;
+
+        font-size: 22.5px;
+        font-weight: 500;
+        line-height: 38px;
+
+        border-bottom: $block-border;
+
+        grid-column: 2/3;
+    }
+
+    &__latin-name {
+        padding: 4px;
+
+        border-bottom: $block-border;
+
+        grid-column: 2/3;
+    }
+
+    &__description {
+        font-size: 15px;
+
+        grid-column: 1/3;
+    }
+
+    & .audio-player {
+        align-self: start;
+
+        margin-top: 10px;
+
+        grid-column: 2/3;
     }
 }

@@ -1,0 +1,57 @@
+@import "../../style/constants.scss";
+
+.final-window {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 64px 32px;
+
+    border-radius: $border-radius;
+    background-color: $block-background-color;
+
+    &__heading {
+        margin: 0;
+
+        font-size: 72px;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+
+    &__text {
+        margin-top: 15px;
+
+        font-size: 19px;
+        font-weight: 300;
+    }
+
+    &__button {
+        width: 100%;
+        margin: 25px 0;
+        padding: 15px;
+
+        font-size: 15px;
+
+        color: $font-color;
+        border: none;
+        border-radius: $border-radius;
+        background-color: $light-green-color;
+
+        &:hover {
+            background-color: $hovered-button-color;
+        }
+    }
+
+    hr {
+        width: 100%;
+        margin: 35px 0;
+
+        border: none;
+        border-bottom: 1px solid $background-color;
+    }
+
+    &__img {
+        width: 140px;
+        margin-top: 15px;
+    }
+}

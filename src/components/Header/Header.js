@@ -1,7 +1,9 @@
 import React from 'react';
 import './Header.scss';
 import logo from '../../assets/img/logo.svg';
-import QuestionsList from './QuestionsList/QuestionsList'
+import QuestionsList from './QuestionsList/QuestionsList';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 
 const Header = (props) => {
     return (
@@ -12,7 +14,7 @@ const Header = (props) => {
                     src={logo}
                     alt='Songbird'
                 />
-                <p>Score: </p>
+                <p className='header__score'>Score: {props.score}</p>
             </div>
 
             <QuestionsList />
@@ -20,4 +22,14 @@ const Header = (props) => {
     )
 }
 
-export default Header;
+function mapStateToProps(state) {
+    return {
+        score: state.main.score,
+    }
+}
+
+Header.propTypes = {
+    score: PropTypes.number,
+}
+
+export default connect(mapStateToProps)(Header);

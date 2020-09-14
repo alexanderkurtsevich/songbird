@@ -24,3 +24,5 @@ const app = (
 )
 
 ReactDOM.render(app, document.getElementById('root'));
+
+export default store;
